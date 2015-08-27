@@ -34,7 +34,7 @@ var work = {
 			"description": "Operating gas turbine generators and switchboards. Responsibilities included: updating equipment logs, performing preventative maintenance on power plant equipment, giving and receiving on the job training and presentations, and safety tagging electrical equipment."
 		}
 	]
-};
+}
 
 var projects = {
 	"projects" : [
@@ -45,7 +45,7 @@ var projects = {
 			"images": []
 		}
 	]
-};
+}
 
 var bio = {
 	"biopic" : "images/kfm.jpg",
@@ -54,7 +54,7 @@ var bio = {
 	"welcomeMessage" : "Welcome!",
 	"contacts" : [{"email": "kfmahre@gmail.com"}, {"mobile": "404.610.6162"}],
 	"skills" : ["programming", "html", "css", "JS"]
-};
+}
 
 var education = {
 	"schools" : [
@@ -74,7 +74,7 @@ var education = {
 			"url": "https://www.udacity.com/"
 		}
 	]
-};
+}
 
 if (bio.skills.length > 0) {
 
@@ -88,8 +88,9 @@ if (bio.skills.length > 0) {
 	$("#skills").append(formattedSkills);
 	var formattedSkills = HTMLskills.replace("%data%", bio.skills[3]);
 	$("#skills").append(formattedSkills);
-};
+}
 
+function displayWork() {
 for (job in work.jobs) {
 	$("#workExperience").append(HTMLworkStart);
 	var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
@@ -108,4 +109,15 @@ for (job in work.jobs) {
 
 	var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
 	$(".work-entry:last").append(formattedDescription);
-};
+}
+}
+
+displayWork();
+
+$(document).click(function(loc) {
+
+var x = loc.pageX;
+var y = loc.pageY;
+
+	logClicks(x,y);
+});
