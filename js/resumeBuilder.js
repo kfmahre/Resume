@@ -1,25 +1,16 @@
-var name = "Kyle Mahre";
-var role = "Web developer";
-
-var formattedName = HTMLheaderName.replace("%data%", name);
-var formattedRole = HTMLheaderRole.replace("%data%", role);
-
-$("#header").prepend(formattedName);
-$("#header").append(formattedRole);
-
 var work = {
 	"jobs" : [
 		{
 			"employer" : "STARBUCKS",
 			"title" : "BARISTA",
-			"location": ["KENNESAW", "GEORGIA"],
+			"location": "KENNESAW, GEORGIA",
 			"dates" : "2011- PRESENT",
 			"description": "Customer service, preparing drinks, cash management, sharing knowledge of products, merchandise sales and service, cleaning; anticipation, connection, and personalization of customer needs."
 		},
 		{
 			"employer" : "KING & YAKLIN, LLP.",
 			"title" : "FILE CLERK",
-			"location": ["MARIETTA", "GEORGIA"],
+			"location": "MARIETTA, GEORGIA",
 			"dates": "JAN 2013-APR 2013",
 			"description": "Closing Files; Distinguishing whether closed file documents should be kept, stored electronically, or destroyed; making runs to court and judges chambers; Sorting correspondence; organizing files and file rooms."
 		},
@@ -51,21 +42,21 @@ var projects = {
 };
 
 var bio = {
-	"biopic" : "images/kfm.jpg",
+	"bioPic" : ["images/kfm.jpg"],
 	"name" : "Kyle Mahre",
 	"role" : "Web developer",
-	"welcomeMessage" : "Welcome!",
+	"welcomeMessage" : "Thanks for checking out my resume!",
 	"contacts" : [{"email": "kfmahre@gmail.com"}, {"mobile": "404.610.6162"}],
-	"skills" : ["programming", "html", "css", "JS"]
+	"skills" : ["html5", "css3", "JavaScript", "Git"]
 };
 
 var education = {
 	"schools" : [
 		{
 			"name" : "Kennesaw State University",
-			"location" : ["Kennesaw", "Georgia"],
-			"degree" : "BS",
-			"majors" : ["PoliSci", "Legal Studies"],
+			"location" : "Kennesaw, Georgia",
+			"degree" : "Bachelors",
+			"majors" : "PoliSci",
 			"dates": "2007-2010"
 		}
 	],
@@ -78,6 +69,13 @@ var education = {
 		}
 	]
 };
+
+var formattedName = HTMLheaderName.replace("%data%", bio.name);
+var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
+$("#header").prepend(formattedBioPic);
+$("#header").prepend(formattedName);
+$("#header").append(formattedRole);
 
 if (bio.skills.length > 0) {
 
@@ -160,3 +158,28 @@ projects.display = function() {
 
 projects.display();
 
+$("#mapDiv").append(googleMap);
+
+education.display = function() {
+	for (school in education.schools) {
+		$("#education").append(HTMLschoolStart);
+
+		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
+		$(".education-entry:last").append(formattedName);
+
+		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
+		$(".education-entry:last").append(formattedLocation);
+
+		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
+		$(".education-entry:last").append(formattedDegree);
+
+		var formattedMajors = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
+		$(".education-entry:last").append(formattedMajors);
+
+		var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
+		$(".education-entry:last").append(formattedDates);
+
+	}
+};
+
+education.display();
