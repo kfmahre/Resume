@@ -1,23 +1,52 @@
+var bio = {
+	"bioPic" : ["images/kfm.jpg"],
+	"name" : "Kyle Mahre",
+	"role" : "Web developer",
+	"welcomeMessage" : "Thanks for checking out my resume!",
+	"contacts" : [{"email": "kfmahre@gmail.com"}, {"mobile": "404.610.6162"}],
+	"skills" : ["html5", "css3", "JavaScript", "Git"]
+};
+
+var education = {
+	"schools" : [
+		{
+			"name" : "Kennesaw State University",
+			"location" : "Kennesaw, GA",
+			"degree" : "BS",
+			"majors" : "PoliSci",
+			"dates": "2010"
+		}
+	],
+	"onlineCourses" : [
+		{
+			"name": "Udacity",
+			"degree": "Nanodegree",
+			"course": "Front-end developer",
+			"url": "https://www.udacity.com/"
+		}
+	]
+};
+
 var work = {
 	"jobs" : [
 		{
 			"employer" : "STARBUCKS",
 			"title" : "BARISTA",
-			"location": "KENNESAW, GEORGIA",
+			"location": "KENNESAW, GA",
 			"dates" : "2011- PRESENT",
 			"description": "Customer service, preparing drinks, cash management, sharing knowledge of products, merchandise sales and service, cleaning; anticipation, connection, and personalization of customer needs."
 		},
 		{
 			"employer" : "KING & YAKLIN, LLP.",
 			"title" : "FILE CLERK",
-			"location": "MARIETTA, GEORGIA",
+			"location": "MARIETTA, GA",
 			"dates": "JAN 2013-APR 2013",
 			"description": "Closing Files; Distinguishing whether closed file documents should be kept, stored electronically, or destroyed; making runs to court and judges chambers; Sorting correspondence; organizing files and file rooms."
 		},
 		{
 			"employer": "US NAVY",
 			"title": "ENLSITED SAILOR",
-			"location": ["USS BARRY DDG-52", "NORFOLK, VIRGINIA"],
+			"location": "NORFOLK, VA",
 			"dates": "2004-2007",
 			"description": "Operating gas turbine generators and switchboards. Responsibilities included: updating equipment logs, performing preventative maintenance on power plant equipment, giving and receiving on the job training and presentations, and safety tagging electrical equipment."
 		}
@@ -37,35 +66,6 @@ var projects = {
 			"dates" : "2015",
 			"description" : "there will be another project here",
 			"images" : ["http://placehold.it/350x150"]
-		}
-	]
-};
-
-var bio = {
-	"bioPic" : ["images/kfm.jpg"],
-	"name" : "Kyle Mahre",
-	"role" : "Web developer",
-	"welcomeMessage" : "Thanks for checking out my resume!",
-	"contacts" : [{"email": "kfmahre@gmail.com"}, {"mobile": "404.610.6162"}],
-	"skills" : ["html5", "css3", "JavaScript", "Git"]
-};
-
-var education = {
-	"schools" : [
-		{
-			"name" : "Kennesaw State University",
-			"location" : "Kennesaw, Georgia",
-			"degree" : "Bachelors",
-			"majors" : "PoliSci",
-			"dates": "2007-2010"
-		}
-	],
-	"onlineCourses" : [
-		{
-			"name": "Udacity",
-			"degree": "Nanodegree",
-			"course": "Front-end developer",
-			"url": "https://www.udacity.com/"
 		}
 	]
 };
@@ -158,20 +158,18 @@ projects.display = function() {
 
 projects.display();
 
-$("#mapDiv").append(googleMap);
-
 education.display = function() {
 	for (school in education.schools) {
 		$("#education").append(HTMLschoolStart);
 
 		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
-		$(".education-entry:last").append(formattedName);
-
-		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
-		$(".education-entry:last").append(formattedLocation);
+		$(".education-entry:last").prepend(formattedName);
 
 		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
 		$(".education-entry:last").append(formattedDegree);
+
+		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
+		$(".education-entry:last").append(formattedLocation);
 
 		var formattedMajors = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
 		$(".education-entry:last").append(formattedMajors);
@@ -183,3 +181,5 @@ education.display = function() {
 };
 
 education.display();
+
+$("#mapDiv").append(googleMap);
