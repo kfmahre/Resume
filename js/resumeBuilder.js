@@ -32,21 +32,21 @@ var work = {
 		{
 			"employer" : "STARBUCKS",
 			"title" : "BARISTA",
-			"location": "KENNESAW, GA",
+			"location": "Kennesaw, GA",
 			"dates" : "2011- PRESENT",
 			"description": "Customer service, preparing drinks, cash management, sharing knowledge of products, merchandise sales and service, cleaning; anticipation, connection, and personalization of customer needs."
 		},
 		{
 			"employer" : "KING & YAKLIN, LLP.",
 			"title" : "FILE CLERK",
-			"location": "MARIETTA, GA",
+			"location": "Marietta, GA",
 			"dates": "JAN 2013-APR 2013",
 			"description": "Closing Files; Distinguishing whether closed file documents should be kept, stored electronically, or destroyed; making runs to court and judges chambers; Sorting correspondence; organizing files and file rooms."
 		},
 		{
 			"employer": "US NAVY",
 			"title": "ENLSITED SAILOR",
-			"location": "NORFOLK, VA",
+			"location": "Norfolk, VA",
 			"dates": "2004-2007",
 			"description": "Operating gas turbine generators and switchboards. Responsibilities included: updating equipment logs, performing preventative maintenance on power plant equipment, giving and receiving on the job training and presentations, and safety tagging electrical equipment."
 		}
