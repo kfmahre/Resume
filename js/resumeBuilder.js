@@ -12,16 +12,17 @@ var education = {
 		{
 			"name" : "Kennesaw State University",
 			"location" : "Kennesaw, GA",
-			"degree" : "BS",
-			"majors" : "PoliSci",
-			"dates": "2010"
+			"degree" : "Bachelor of Science",
+			"majors" : "Political Science",
+			"dates": "2010",
+			"url": "http://www.kennesaw.edu/"
 		}
 	],
 	"onlineCourses" : [
 		{
-			"name": "Udacity",
-			"degree": "Nanodegree",
-			"course": "Front-end developer",
+			"title": "Intro to HTML and CSS",
+			"school": "Udacity",
+			"date": "July-Aug 2015",
 			"url": "https://www.udacity.com/"
 		}
 	]
@@ -162,21 +163,21 @@ education.display = function() {
 	for (school in education.schools) {
 		$("#education").append(HTMLschoolStart);
 
-		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
-		$(".education-entry:last").prepend(formattedName);
+		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name).replace("#", education.schools[school].url);
 
 		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-		$(".education-entry:last").append(formattedDegree);
 
-		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
-		$(".education-entry:last").append(formattedLocation);
-
-		var formattedMajors = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
-		$(".education-entry:last").append(formattedMajors);
+		var formattedNameDegree = formattedName + formattedDegree;
+		$(".education-entry:last").prepend(formattedNameDegree);
 
 		var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
 		$(".education-entry:last").append(formattedDates);
 
+		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
+		$(".education-entry:last").prepend(formattedLocation);
+
+		var formattedMajors = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
+		$(".education-entry:last").append(formattedMajors);
 	}
 };
 
