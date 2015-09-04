@@ -11,7 +11,7 @@ h5,
 h6 {
   padding:0;
   margin:0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .clear-fix {
@@ -26,15 +26,16 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: #feb700;
   line-height: 48px;
   display: inline;
+  text-shadow: 1px 1px gray;
 }
 
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999;
+  color: #4a4a4a;
   line-height: 29px;
   padding: 10px;
 }
@@ -44,6 +45,7 @@ h3 {
   font-size: 20px;
   color: #000;
   line-height: 22px;
+  font-weight: 200;
 }
 
 h4 {
@@ -86,10 +88,16 @@ p {
 }
 
 a {
-  color: #1199c3;
+  color: #0099ff;
+  text-shadow: 1px 1px white;
   text-decoration: none;
   margin-top: 10px;
   display: block;
+}
+
+a:hover {
+  color: gray;
+  text-decoration: none;
 }
 
 .welcome-message {
@@ -100,16 +108,16 @@ a {
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: #999;
   display: none;
 }
 
 .orange {
-  background-color: #f5ae23;
+  background-color: #feb700;
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: #feb700;
 }
 
 .white-text {
@@ -118,17 +126,20 @@ a {
 }
 
 .gray {
+  background: url(white_carbon.png) repeat;
   background-color: #f3f3f3;
   padding-bottom: 10px;
   clear:both;
 }
 
 .dark-gray {
+  background: url(dark_matter.png) repeat;
   background-color: #4a4a4a;
 }
 
 /* TODO: Replace with image later */
 #header {
+  background: url(dark_matter.png) repeat;
   background-color: #484848;
 }
 
@@ -162,6 +173,8 @@ img {
 
 span {
   padding: 5px;
+  color: #999;
+  font-weight: 200;
 }
 
 #lets-connect {
