@@ -114,6 +114,7 @@ a:hover {
 
 .orange {
   background-color: #feb700;
+  background: url(knitted-netting.png) repeat;
 }
 
 .orange-text {
@@ -126,7 +127,7 @@ a:hover {
 }
 
 .gray {
-  background: url(white_carbon.png) repeat;
+  background: url(diamond_upholstery.png) repeat;
   background-color: #f3f3f3;
   padding-bottom: 10px;
   clear:both;
