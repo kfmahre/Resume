@@ -8,7 +8,8 @@ var bio = {
 		"mobile": "404.555.6162",
 		"github": "https://github.com/kfmahre"
 	},
-	"skills" : ["HTML5", "CSS3", "JavaScript", "Git"]
+	"skills" : ["HTML5", "CSS3", "JavaScript", "Git", "Github"]
+	// TODO: Add more skills as learned
 };
 
 bio.display = function() {
@@ -23,8 +24,7 @@ bio.display = function() {
 	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 	var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
 	var formattedContactsAll = formattedEmail + formattedMobile + formattedGithub;
-	$("#topContacts").append(formattedContactsAll);
-	$("#footerContacts").append(formattedContactsAll);
+	$("#topContacts, #footerContacts").append(formattedContactsAll);
 
 	var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
 	$("#header").append(formattedBioPic);
@@ -32,16 +32,11 @@ bio.display = function() {
 	var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 	$("#header").append(formattedWelcomeMessage);
 
-	if (bio.skills.length > 0) {
-		$("#header").append(HTMLskillsStart);
+	$("#header").append(HTMLskillsStart);
 
-		var formattedSkills = HTMLskills.replace("%data%", bio.skills[0]);
-		$("#skills").append(formattedSkills);
-		var formattedSkills = HTMLskills.replace("%data%", bio.skills[1]);
-		$("#skills").append(formattedSkills);
-		var formattedSkills = HTMLskills.replace("%data%", bio.skills[2]);
-		$("#skills").append(formattedSkills);
-		var formattedSkills = HTMLskills.replace("%data%", bio.skills[3]);
+	for (var i = 0; i < bio.skills.length; i++) {
+		console.log(bio.skills[i]);
+		var formattedSkills = HTMLskills.replace("%data%", bio.skills[i]);
 		$("#skills").append(formattedSkills);
 	}
 
@@ -75,8 +70,8 @@ var work = {
 	]
 };
 
-function displayWork() {
-	for (job in work.jobs) {
+work.display = function() {
+	for (var job in work.jobs) {
 		$("#workExperience").append(HTMLworkStart);
 		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
 		var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
@@ -97,8 +92,9 @@ function displayWork() {
 	}
 };
 
-displayWork();
+work.display();
 
+// TODO: Add in projects as they are completed
 var projects = {
 	"projects" : [
 		{
@@ -117,7 +113,7 @@ var projects = {
 };
 
 projects.display = function() {
-	for (project in projects.projects) {
+		for (var project in projects.projects) {
 		$("#projects").append(HTMLprojectStart);
 
 		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
@@ -130,7 +126,7 @@ projects.display = function() {
 		$(".project-entry:last").append(formattedDescription);
 
 		if (projects.projects[project].images.length > 0) {
-			for (image in projects.projects[project].images) {
+			for (var image in projects.projects[project].images) {
 			var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
 			$(".project-entry:last").append(formattedImage);
 			}
@@ -140,6 +136,7 @@ projects.display = function() {
 
 projects.display();
 
+// TODO: add in seperate online courses from Udacity nanodegree seperately
 var education = {
 	"schools" : [
 		{
@@ -223,7 +220,7 @@ function inName(name) {
 	name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
 
 	return name[0] +" "+name[1];
-};
+}
 
 $("#main").append(internationalizeButton);
 
