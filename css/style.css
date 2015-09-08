@@ -29,7 +29,7 @@ h1 {
   color: #feb700;
   line-height: 48px;
   display: inline;
-  text-shadow: 1px 1px gray;
+  text-shadow: 1px 1px #999;
 }
 
 h2 {
@@ -67,7 +67,7 @@ h5 {
 .date-text {
   font-style: italic;
   font-size: 14px;
-  color: #999;
+  color: #666;
   line-height: 16px;
   float: left;
 }
@@ -75,7 +75,7 @@ h5 {
 .location-text {
   font-style: italic;
   font-size: 14px;
-  color: #999;
+  color: #666;
   line-height: 16px;
   float: right;
 
@@ -88,7 +88,7 @@ p {
 }
 
 a {
-  color: #0099ff;
+  color: #1975d1;
   text-shadow: 1px 1px white;
   text-decoration: none;
   margin-top: 10px;
@@ -114,7 +114,7 @@ a:hover {
 
 .orange {
   background-color: #feb700;
-  background: url(knitted-netting.png) repeat;
+  background: url(retina_wood.png) repeat;
 }
 
 .orange-text {
@@ -127,20 +127,20 @@ a:hover {
 }
 
 .gray {
-  background: url(diamond_upholstery.png) repeat;
+  background: url(retina_wood.png) repeat;
   background-color: #f3f3f3;
   padding-bottom: 10px;
   clear:both;
 }
 
 .dark-gray {
-  background: url(dark_matter.png) repeat;
+  background: url(wood_1.png) repeat;
   background-color: #4a4a4a;
 }
 
 /* TODO: Replace with image later */
 #header {
-  background: url(dark_matter.png) repeat;
+  background: url(wood_1.png) repeat;
   background-color: #484848;
 }
 

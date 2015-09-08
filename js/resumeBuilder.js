@@ -1,3 +1,4 @@
+'use strict';
 var bio = {
 	"bioPic" : ["images/kfm.jpg"],
 	"name" : "Kyle Mahre",
@@ -13,7 +14,6 @@ var bio = {
 };
 
 bio.display = function() {
-
 	var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 	$("#header").prepend(formattedRole);
 
@@ -71,23 +71,24 @@ var work = {
 };
 
 work.display = function() {
-	for (var job in work.jobs) {
+	for (var i = 0; i < work.jobs.length; i++) {
+		console.log(work.jobs[i]);
 		$("#workExperience").append(HTMLworkStart);
-		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
-		var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
+		var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title);
 		var formattedEmployerTitle = formattedEmployer + formattedTitle;
 		$(".work-entry:last").append(formattedEmployerTitle);
 
 
-		var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
+		var formattedDates = HTMLworkDates.replace("%data%", work.jobs[i].dates);
 		$(".work-entry:last").append(formattedDates);
 
 
-		var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
+		var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[i].location);
 		$(".work-entry:last").append(formattedLocation);
 
 
-		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
+		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[i].description);
 		$(".work-entry:last").append(formattedDescription);
 	}
 };
