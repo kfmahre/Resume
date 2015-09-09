@@ -48,6 +48,7 @@ var work = {
 	"jobs" : [
 		{
 			"employer" : "STARBUCKS",
+			"url" : "http://www.starbucks.com/store/17309/us/chastain-busbee/745-chastain-rd-kennesaw-ga-301443000",
 			"title" : "BARISTA",
 			"location": "Kennesaw, GA",
 			"dates" : "2011- PRESENT",
@@ -55,6 +56,7 @@ var work = {
 		},
 		{
 			"employer" : "KING & YAKLIN, LLP.",
+			"url" : "http://www.kingyaklin.com/",
 			"title" : "FILE CLERK",
 			"location": "Marietta, GA",
 			"dates": "JAN 2013-APR 2013",
@@ -62,10 +64,11 @@ var work = {
 		},
 		{
 			"employer": "US NAVY",
+			"url" : "https://en.wikipedia.org/wiki/USS_Barry_(DDG-52)",
 			"title": "ENLSITED SAILOR",
 			"location": "Norfolk, VA",
 			"dates": "2004-2007",
-			"description": "Operating gas turbine generators and switchboards. Responsibilities included: updating equipment logs, performing preventative maintenance on power plant equipment, giving and receiving on the job training and presentations, and safety tagging electrical equipment."
+			"description": "Served onboard the USS Barry(DDG-52). Duties included operating gas turbine generators and switchboards. Responsibilities included: updating equipment logs, performing preventative maintenance on power plant equipment, giving and receiving on the job training and presentations, and safety tagging electrical equipment."
 		}
 	]
 };
@@ -74,7 +77,7 @@ work.display = function() {
 	for (var i = 0; i < work.jobs.length; i++) {
 		console.log(work.jobs[i]);
 		$("#workExperience").append(HTMLworkStart);
-		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
+		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer).replace("#", work.jobs[i].url);
 		var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title);
 		var formattedEmployerTitle = formattedEmployer + formattedTitle;
 		$(".work-entry:last").append(formattedEmployerTitle);
@@ -99,16 +102,18 @@ work.display();
 var projects = {
 	"projects" : [
 		{
-			"title" : "Placeholder",
+			"title" : "Portfolio",
 			"dates" : "2015",
-			"description" : "there will be a project here",
-			"images": ["http://placehold.it/350x150"]
+			"description" : "This is a resposively designed portfolio of all the projects I've currently comepleted.",
+			"images": ["images/foliopic1.png", "images/foliopic2.png"],
+			"url" : "/users/kyle/desktop/WDirs/project-1/index.html"
 		},
 		{
 			"title" : "Placeholder2",
 			"dates" : "2015",
 			"description" : "there will be another project here",
-			"images" : ["http://placehold.it/350x150"]
+			"images" : ["http://placehold.it/350x150"],
+			"url" : ""
 		}
 	]
 };
@@ -117,7 +122,7 @@ projects.display = function() {
 		for (var project in projects.projects) {
 		$("#projects").append(HTMLprojectStart);
 
-		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title).replace("#",projects.projects[project].url);
 		$(".project-entry:last").append(formattedTitle);
 
 		var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
@@ -160,7 +165,7 @@ var education = {
 };
 
 education.display = function() {
-	for (school in education.schools) {
+	for (var school in education.schools) {
 		$("#education").append(HTMLschoolStart);
 
 		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name).replace("#", education.schools[school].url);
@@ -182,7 +187,7 @@ education.display = function() {
 	}
 
 
-	for (onlineCourse in education.schools) {
+	for (var onlineCourse in education.schools) {
 
 		$("#education").append(HTMLonlineClasses);
 		$("#education").append(HTMLschoolStart);
