@@ -106,7 +106,7 @@ var projects = {
 			"dates" : "2015",
 			"description" : "This is a resposively designed portfolio of all the projects I've currently comepleted.",
 			"images": ["images/foliopic1.png", "images/foliopic2.png"],
-			"url" : "https://kfmahre.github.io"
+			"url" : "https://kfmahre.github.io/index.html"
 		},
 		{
 			"title" : "Placeholder2",
