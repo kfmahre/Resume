@@ -1,12 +1,12 @@
 'use strict';
 var bio = {
-	"bioPic" : ["images/kfm.jpg"],
+	"bioPic" : ["images/kfm3.png"],
 	"name" : "Kyle Mahre",
 	"role" : "Web developer",
-	"welcomeMessage" : "Thanks for checking out my resume!",
+	"welcomeMessage" : "Welcome to my resume webpage",
 	"contacts" : {
 		"email": "kfmahre@gmail.com",
-		"mobile": "404.555.6162",
+		"mobile": "404.610.6162",
 		"github": "https://github.com/kfmahre"
 	},
 	"skills" : ["HTML5", "CSS3", "JavaScript", "Git", "Github"]
@@ -109,11 +109,11 @@ var projects = {
 			"url" : "http://kfmahre.github.io/Portfolio/"
 		},
 		{
-			"title" : "Placeholder2",
-			"dates" : "2015",
-			"description" : "there will be another project here",
-			"images" : ["http://placehold.it/350x150"],
-			"url" : ""
+			"title" : "Classic Arcade Game Clone",
+			"dates" : "September-October 2015 & continued",
+			"description" : "Developing this classic arcade game clone enhanced my skills in object-oriented JavaScript and expanded my understanding of HTML canvas.",
+			"images" : ["images/aGame1.png","images/aGame2.png"],
+			"url" : "https://github.com/kfmahre/frontend-nanodegree-arcade-game"
 		}
 	]
 };
