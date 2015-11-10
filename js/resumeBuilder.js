@@ -113,7 +113,7 @@ var projects = {
 			"dates" : "September-October 2015 & continued",
 			"description" : "Developing this classic arcade game clone enhanced my skills in object-oriented JavaScript and expanded my understanding of HTML canvas.",
 			"images" : ["images/aGame1.png","images/aGame2.png"],
-			"url" : "https://github.com/kfmahre/frontend-nanodegree-arcade-game"
+			"url" : "https://github.com/kfmahre/arcade-game"
 		}
 	]
 };
