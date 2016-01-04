@@ -140,8 +140,10 @@ a:hover {
 
 /* TODO: Replace with image later */
 #header {
-  background: url(wood_1.png) repeat;
-  background-color: #484848;
+  background-color: #000000;
+  background: url(graphy-inv.png) repeat;
+  background-position: 0 0;
+  background-repeat: repeat;
 }
 
 .flex-box {

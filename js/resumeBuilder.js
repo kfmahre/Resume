@@ -1,6 +1,6 @@
 'use strict';
 var bio = {
-	"bioPic" : ["images/kfm3.png"],
+	"bioPic" : ["images/old500X.jpg"],
 	"name" : "Kyle Mahre",
 	"role" : "Web developer",
 	"welcomeMessage" : "Welcome to my resume webpage",
@@ -9,7 +9,7 @@ var bio = {
 		"mobile": "404.610.6162",
 		"github": "https://github.com/kfmahre"
 	},
-	"skills" : ["HTML5", "CSS3", "JavaScript", "Git", "Github"]
+	"skills" : ["HTML5", "CSS3", "JavaScript", "Git", "Github", "Gulp"]
 	// TODO: Add more skills as learned
 };
 
@@ -52,7 +52,7 @@ var work = {
 			"title" : "BARISTA",
 			"location": "Kennesaw, GA",
 			"dates" : "2011- PRESENT",
-			"description": "Customer service, preparing drinks, cash management, sharing knowledge of products, merchandise sales and service, cleaning; anticipation, connection, and personalization of customer needs."
+			"description": "Works as part of a team to keep the busiest store in the district running smoothly. Improvises and communicates with my coworkers in a dynamic environment. Requires focus, flexibility, manners, and cool-headedness."
 		},
 		{
 			"employer" : "KING & YAKLIN, LLP.",
@@ -60,7 +60,7 @@ var work = {
 			"title" : "FILE CLERK",
 			"location": "Marietta, GA",
 			"dates": "JAN 2013-APR 2013",
-			"description": "Closing Files; Distinguishing whether closed file documents should be kept, stored electronically, or destroyed; making runs to court and judges chambers; Sorting correspondence; organizing files and file rooms."
+			"description": "Filed documents in court and judge’s chambers. Reorganized current and closed files, moved many to electronic storage for safe-keeping."
 		},
 		{
 			"employer": "US NAVY",
@@ -68,7 +68,7 @@ var work = {
 			"title": "ENLSITED SAILOR",
 			"location": "Norfolk, VA",
 			"dates": "2004-2007",
-			"description": "Served onboard the USS Barry(DDG-52). Duties included operating gas turbine generators and switchboards. Responsibilities included: updating equipment logs, performing preventative maintenance on power plant equipment, giving and receiving on the job training and presentations, and safety tagging electrical equipment."
+			"description": "Served as a maintenance technician aboard the guided missile destroyer, USS Barry. Primary focus on maintaining gas-turbine generators and switchboards. Also trained on computer networking, telecommunications, fire-fighting, and damage-control."
 		}
 	]
 };
