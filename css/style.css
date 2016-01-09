@@ -11,6 +11,10 @@ html,body {
   box-sizing: border-box;
 }
 
+body {
+  margin: none;
+}
+
 .clear-fix {
   overflow: auto;
 }
@@ -54,7 +58,7 @@ a:hover {
 }
 
 #skills-h3 {
-  font-style: bold;
+  font-weight: bold;
   display: none;
 }
 
@@ -174,9 +178,22 @@ span {
   text-align: center;
 }
 
+#map {
+  display: block;
+  height: 100%;
+  margin: 0 5%;
+  }
+
+#mapDiv {
+  height: 600px;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
 /* Media queries to handle various device widths */
 
-@media all and (min-width: 960px) {
+@media only screen and (min-width: 701px) {
+
   .biopic {
     width: 175px;
   }
@@ -197,7 +214,8 @@ span {
 
 }
 
-@media all and (max-width: 600px) {
+@media only screen and (max-width: 700px){
+
   section.module h2 {
     font-size: 42px;
   }
@@ -209,12 +227,12 @@ span {
   }
 
   section.module.parallax-2 h1 {
-    font-size: 76px;
+    font-size: 80px;
     line-height: 300px;
   }
 
   section.module.parallax-5 h1 {
-    font-size: 63px;
+    font-size: 60px;
     line-height: 300px;
   }
 
@@ -226,20 +244,17 @@ span {
   display: none;
   }
 
-
-#map {
-  display: block;
-  height: 100%;
-  margin: 0 5%;
-  }
-
-#mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
-  }
-
 #skills-h3,
 .biopic {
   display: block;
   }
+}
+
+@media only screen and (max-width: 485px){
+
+  section.module.parallax-5 h1 {
+    font-size: 60px;
+    line-height: 200px;
+  }
+
+}
