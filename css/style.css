@@ -35,6 +35,10 @@ html,body {
 
 }
 
+img {
+  max-width: 100%;
+}
+
 p {
   font-size: 18px;
   line-height: 24px;
@@ -269,9 +273,10 @@ span {
 @media only screen and (max-width: 485px){
 
   .container {
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
-}
+  }
+
   #workExperience div{
     max-width: 100%;
   }
