@@ -236,6 +236,22 @@ span {
     line-height: 300px;
   }
 
+  .container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+  #workExperience div{
+    max-width: 100%;
+  }
+
+  #education div{
+    max-width: 100%;
+  }
+
+  #projects div{
+    max-width: 100%;
+  }
+
 .biopic {
   width: 150px;
   }
@@ -251,6 +267,22 @@ span {
 }
 
 @media only screen and (max-width: 485px){
+
+  .container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+  #workExperience div{
+    max-width: 100%;
+  }
+
+  #education div{
+    max-width: 100%;
+  }
+
+  #projects div{
+    max-width: 100%;
+  }
 
   section.module.parallax h1 {
     font-size: 60px;
