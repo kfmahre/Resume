@@ -1,17 +1,14 @@
-body,
-div,
-ul,
-li,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  padding:0;
-  margin:0;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,body {
   font-family: 'Source Sans Pro', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .clear-fix {
@@ -21,89 +18,38 @@ h6 {
 .education-entry,
 .work-entry,
 .project-entry {
-  padding: 0 5%;
 }
-
-h1 {
-  font-size: 40px;
-  color: Gold;
-  line-height: 48px;
-  display: inline;
-  text-shadow: 1px 1px #0d0d0d;
-}
-
-h2 {
-  font-weight: bold;
-  font-size: 24px;
-  color: Gold;
-  text-shadow: 1px 1px #0d0d0d;
-  line-height: 29px;
-  padding: 10px;
-}
-
-h3 {
-  color: #ff8000;
-  font-size: 20px;
-  line-height: 22px;
-  font-weight: 200;
-}
-
-h4 {
-  font-weight: bold;
-  font-size: 14px;
-  color: Green;
-  line-height: 17px;
-}
-
-h2,
-h3,
-h4,
-h5 {
-  padding:10px 5%;
-
-}
-
 
 .date-text {
   font-style: italic;
-  font-size: 14px;
-  color: #7d98b3;
-  line-height: 16px;
   float: left;
 }
 
 .location-text {
   font-style: italic;
-  font-size: 14px;
-  color: #ecca13;
-  line-height: 16px;
   float: right;
 
 }
 
 p {
   font-size: 18px;
-  color: #c6b039;
   line-height: 24px;
 }
 
 a {
   font-size: 18px;
-  color: #4da5ff;
-  text-shadow: 1px 1px #cce5ff;
+  text-shadow: 1px 1px gray;
   text-decoration: none;
   margin-top: 10px;
   display: block;
 }
 
 a:hover {
-  color: #fff3b3;
   text-decoration: none;
 }
 
 .welcome-message {
   font-size: 20px;
-  color: #f3f3f3;
   line-height: 28px;
 }
 
@@ -113,17 +59,12 @@ a:hover {
 }
 
 .white-text {
-  font-size: 20px;
-  font-weight: bold;
-  color: #ffffff;
 }
 
 .orange-text {
-  color: #ff4000;
 }
 
 .gray {
-  padding-bottom: 10px;
   clear:both;
 }
 
@@ -131,40 +72,70 @@ em {
   color: #ffffff;
 }
 
-/* TODO: Replace with image later */
-section.parallax {
-background-color:#262626;
-background-image:
-radial-gradient(#262626 85%, transparent 10%),
-linear-gradient(#ac9e53 2px, transparent 2px),
-linear-gradient(90deg, #ac9e53 2px, transparent 2px),
-linear-gradient(#8c8c8c 1px, transparent 1px),
-linear-gradient(90deg, #8c8c8c 1px, transparent 1px);
-background-size: 20px 20px, 10px 100px, 100px 10px, 20px 20px, 20px 20px;
-background-position: -1px -1px, -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-section.topregular {
-  background-color: #262626;
-  background-image: linear-gradient(#262626, #404040);
-  background-size: 100%;
-  background-position: 0px 0px;
-  height: 10px;
+/* parallax effect */
+section.module:last-child {
+  margin-bottom: 0;
 }
 
-section.bottomregular {
-  background-color: #262626;
-  background-image: linear-gradient(#404040, #262626);
-  background-size: 100%;
-  background-position: 0px 0px;
-  height: 10px;
+section.module h1 {
+  margin-bottom: 40px;
+  font-size: 30px;
 }
 
-section.regular {
-  background-color: #262626;
-  background-image: radial-gradient(#666666, #404040);
-  background-size: 100%;
-  background-position: 0px 0px;
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+section.module p:last-child {
+  margin-bottom: 0;
+}
+
+section.module.content {
+  padding: 40px 0;
+}
+
+section.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section.module.parallax-1 {
+  background-image: url("main12x8.jpg");
+}
+section.module.parallax-2 {
+  background-image: url("clouds12x8.jpg");
+}
+section.module.parallax-3 {
+  background-image: url("mtnsunset.jpg");
+}
+section.module.parallax-4 {
+  background-image: url("main12x8.jpg");
+}
+section.module.parallax-5 {
+  background-image: url("clouds12x8.jpg");
 }
 
 .flex-box {
@@ -186,18 +157,16 @@ ul {
 
 .biopic {
   float: left;
-  padding: 10px;
   width: 200px;
-  display: none;
-}
+  border: 3px solid #8c8c8c;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 
-img {
-  padding: 10px;
 }
 
 span {
   padding: 5px;
-  color: #ff8000;
   font-weight: 200;
 }
 
@@ -207,41 +176,70 @@ span {
 
 /* Media queries to handle various device widths */
 
-@media only screen and (max-width: 1024px) {
-
-}
-
-@media only screen and (max-width:900px) {
+@media all and (min-width: 960px) {
   .biopic {
     width: 175px;
   }
+
+  section.module.parallax h1 {
+    font-size: 80px;
+  }
+
+  section.module.parallax-2 h1 {
+  font-size: 80px;
+  line-height: 600px;
+  }
+
+  section.module.parallax-5 h1 {
+  font-size: 80px;
+  line-height: 300px;
+  }
+
 }
 
-@media only screen and (max-width: 750px) {
+@media all and (max-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
 
-  .biopic {
-    width: 150px;
+  section.module.parallax-2 h1 {
+    font-size: 76px;
+    line-height: 300px;
   }
-  .welcome-message {
-    display: none;
+
+  section.module.parallax-5 h1 {
+    font-size: 63px;
+    line-height: 300px;
   }
-}
+
+.biopic {
+  width: 150px;
+  }
+
+.welcome-message {
+  display: none;
+  }
+
 
 #map {
   display: block;
   height: 100%;
   margin: 0 5%;
-}
+  }
 
 #mapDiv {
   height: 400px;
   width: 100%;
   padding-bottom: 5%;
-}
-
-@media only screen and (min-width: 750px) {
-  #skills-h3,
-  .biopic {
-    display: block;
   }
-}
+
+#skills-h3,
+.biopic {
+  display: block;
+  }

@@ -58,61 +58,66 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
   <div id="main">
 
-    <section class="parallax">
-      <div id="header" class="center-content clear-fix">
+    <section class="module parallax parallax-1">
+      <div class="container">
+       <h1>Resume</h1>
+      </div>
+    </section>
+
+    <section class="module content">
+      <div id="header" class="container center-content clear-fix">
         <ul id="topContacts" class="flex-box"></ul>
       </div>
     </section>
 
     <div style="clear: both;"></div>
 
-    <section class="topregular">
-      <br>
-    </section>
-
-    <section class="regular">
-      <div id="workExperience" class="gray">
-        <h2>Work Experience</h2>
+    <section class="module parallax parallax-2">
+      <div class="container">
+       <h1>Work Experience</h1>
       </div>
     </section>
 
-    <section class="bottomregular">
-      <br>
-    </section>
-
-    <section class="parallax">
-      <div id="projects">
-        <h2>Projects</h2>
+    <section class="module content">
+      <div id="workExperience" class="container gray">
       </div>
     </section>
 
-    <section class="topregular">
-      <br>
-    </section>
-
-    <section class="regular">
-      <div id="education" class="gray">
-        <h2>Education</h2>
+    <section class="module parallax parallax-3">
+      <div class="container">
+       <h1>Projects</h1>
       </div>
     </section>
 
-    <section class="bottomregular">
-      <br>
-    </section>
-
-
-    <section class="parallax">
-      <div id="mapDiv">
-        <h2>Where I've Lived and Worked</h2>
+    <section class="module content">
+      <div id="projects" class="container">
       </div>
     </section>
 
-    <section class="topregular">
-      <br>
+    <section class="module parallax parallax-4">
+      <div class="container">
+       <h1>Education</h1>
+      </div>
     </section>
 
-    <section class="regular">
-      <div id="lets-connect" class="">
+    <section class="module content">
+      <div id="education" class="container gray">
+      </div>
+    </section>
+
+    <section class="module parallax parallax-5">
+      <div class="container">
+       <h1>Where I've Lived and Worked</h1>
+      </div>
+    </section>
+
+    <section class="module content">
+      <div id="mapDiv" class="container">
+      </div>
+    </section>
+
+    <section class="module content">
+      <div id="lets-connect" class="container">
         <h2 class="center-text">Let's Connect</h2>
           <ul id="footerContacts" class="flex-box">
         </ul>
@@ -173,25 +178,6 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     if(document.getElementById('map') === 0) {
       document.getElementById('mapDiv').style.backgroundColor = '#000000';
     }
-  </script>
-
-  <script>
-    (function(){
-
-    var parallax = document.getElementsByClassName("parallax"),
-      speed = 0.3;
-
-      window.onscroll = function(){
-      [].slice.call(parallax).forEach(function(el,i){
-
-      var windowYOffset = window.pageYOffset,
-        elBackgrounPos = "0 " + (windowYOffset * speed) + "px";
-
-    el.style.backgroundPosition = elBackgrounPos;
-
-      });
-    };
-    })();
   </script>
 
 </body>
