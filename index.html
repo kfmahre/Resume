@@ -48,32 +48,77 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   -->
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
 
-  <meta name="viewport" content="width=device-width">
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width">
+
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200' rel='stylesheet' type='text/css'>
+
 </head>
+
 <body>
+
   <div id="main">
-    <div id="header" class="center-content clear-fix">
-      <ul id="topContacts" class="flex-box"></ul>
-    </div>
+
+    <section class="parallax">
+      <div id="header" class="center-content clear-fix">
+        <ul id="topContacts" class="flex-box"></ul>
+      </div>
+    </section>
+
     <div style="clear: both;"></div>
-    <div id="workExperience" class="gray">
-      <h2>Work Experience</h2>
-    </div>
-    <div id="projects">
-      <h2>Projects</h2>
-    </div>
-    <div id="education" class="gray">
-      <h2>Education</h2>
-    </div>
-    <div id="mapDiv">
-      <h2>Where I've Lived and Worked</h2>
-    </div>
-    <div id="lets-connect" class="dark-gray">
-      <h2 class="orange center-text">Let's Connect</h2>
-        <ul id="footerContacts" class="flex-box">
-      </ul>
-    </div>
+
+    <section class="topregular">
+      <br>
+    </section>
+
+    <section class="regular">
+      <div id="workExperience" class="gray">
+        <h2>Work Experience</h2>
+      </div>
+    </section>
+
+    <section class="bottomregular">
+      <br>
+    </section>
+
+    <section class="parallax">
+      <div id="projects">
+        <h2>Projects</h2>
+      </div>
+    </section>
+
+    <section class="topregular">
+      <br>
+    </section>
+
+    <section class="regular">
+      <div id="education" class="gray">
+        <h2>Education</h2>
+      </div>
+    </section>
+
+    <section class="bottomregular">
+      <br>
+    </section>
+
+
+    <section class="parallax">
+      <div id="mapDiv">
+        <h2>Where I've Lived and Worked</h2>
+      </div>
+    </section>
+
+    <section class="topregular">
+      <br>
+    </section>
+
+    <section class="regular">
+      <div id="lets-connect" class="">
+        <h2 class="center-text">Let's Connect</h2>
+          <ul id="footerContacts" class="flex-box">
+        </ul>
+      </div>
+    </section>
+
   </div>
 
   <!--
@@ -129,5 +174,26 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       document.getElementById('mapDiv').style.backgroundColor = '#000000';
     }
   </script>
+
+  <script>
+    (function(){
+
+    var parallax = document.getElementsByClassName("parallax"),
+      speed = 0.3;
+
+      window.onscroll = function(){
+      [].slice.call(parallax).forEach(function(el,i){
+
+      var windowYOffset = window.pageYOffset,
+        elBackgrounPos = "0 " + (windowYOffset * speed) + "px";
+
+    el.style.backgroundPosition = elBackgrounPos;
+
+      });
+    };
+    })();
+  </script>
+
 </body>
+
 </html>

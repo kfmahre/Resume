@@ -26,24 +26,24 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: #feb700;
+  color: Gold;
   line-height: 48px;
   display: inline;
-  text-shadow: 1px 1px #999;
+  text-shadow: 1px 1px #0d0d0d;
 }
 
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #4a4a4a;
+  color: Gold;
+  text-shadow: 1px 1px #0d0d0d;
   line-height: 29px;
   padding: 10px;
 }
 
 h3 {
-  font-style: italic;
+  color: #ff8000;
   font-size: 20px;
-  color: #000;
   line-height: 22px;
   font-weight: 200;
 }
@@ -51,7 +51,7 @@ h3 {
 h4 {
   font-weight: bold;
   font-size: 14px;
-  color: #4a4a4a;
+  color: Green;
   line-height: 17px;
 }
 
@@ -67,7 +67,7 @@ h5 {
 .date-text {
   font-style: italic;
   font-size: 14px;
-  color: #666;
+  color: #7d98b3;
   line-height: 16px;
   float: left;
 }
@@ -75,75 +75,96 @@ h5 {
 .location-text {
   font-style: italic;
   font-size: 14px;
-  color: #666;
+  color: #ecca13;
   line-height: 16px;
   float: right;
 
 }
 
 p {
-  font-size: 14px;
-  color: #333;
-  line-height: 21px;
+  font-size: 18px;
+  color: #c6b039;
+  line-height: 24px;
 }
 
 a {
-  color: #1975d1;
-  text-shadow: 1px 1px white;
+  font-size: 18px;
+  color: #4da5ff;
+  text-shadow: 1px 1px #cce5ff;
   text-decoration: none;
   margin-top: 10px;
   display: block;
 }
 
 a:hover {
-  color: gray;
+  color: #fff3b3;
   text-decoration: none;
 }
 
 .welcome-message {
-  font-style: italic;
-  font-size: 18px;
+  font-size: 20px;
   color: #f3f3f3;
   line-height: 28px;
 }
 
 #skills-h3 {
-  color: #999;
+  font-style: bold;
   display: none;
 }
 
-.orange {
-  background-color: #feb700;
-  background: url(retina_wood.png) repeat;
+.white-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .orange-text {
-  color: #feb700;
-}
-
-.white-text {
-  font-weight: bold;
-  color: #fff;
+  color: #ff4000;
 }
 
 .gray {
-  background: url(retina_wood.png) repeat;
-  background-color: #f3f3f3;
   padding-bottom: 10px;
   clear:both;
 }
 
-.dark-gray {
-  background: url(wood_1.png) repeat;
-  background-color: #4a4a4a;
+em {
+  color: #ffffff;
 }
 
 /* TODO: Replace with image later */
-#header {
-  background-color: #000000;
-  background: url(graphy-inv.png) repeat;
-  background-position: 0 0;
-  background-repeat: repeat;
+section.parallax {
+background-color:#262626;
+background-image:
+radial-gradient(#262626 85%, transparent 10%),
+linear-gradient(#ac9e53 2px, transparent 2px),
+linear-gradient(90deg, #ac9e53 2px, transparent 2px),
+linear-gradient(#8c8c8c 1px, transparent 1px),
+linear-gradient(90deg, #8c8c8c 1px, transparent 1px);
+background-size: 20px 20px, 10px 100px, 100px 10px, 20px 20px, 20px 20px;
+background-position: -1px -1px, -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+section.topregular {
+  background-color: #262626;
+  background-image: linear-gradient(#262626, #404040);
+  background-size: 100%;
+  background-position: 0px 0px;
+  height: 10px;
+}
+
+section.bottomregular {
+  background-color: #262626;
+  background-image: linear-gradient(#404040, #262626);
+  background-size: 100%;
+  background-position: 0px 0px;
+  height: 10px;
+}
+
+section.regular {
+  background-color: #262626;
+  background-image: radial-gradient(#666666, #404040);
+  background-size: 100%;
+  background-position: 0px 0px;
 }
 
 .flex-box {
@@ -176,7 +197,7 @@ img {
 
 span {
   padding: 5px;
-  color: #999;
+  color: #ff8000;
   font-weight: 200;
 }
 
@@ -187,9 +208,7 @@ span {
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {
-  #lets-connect {
-    margin-top: 5%;
-  }
+
 }
 
 @media only screen and (max-width:900px) {
@@ -199,9 +218,7 @@ span {
 }
 
 @media only screen and (max-width: 750px) {
-  #lets-connect {
-    margin-top: 10%;
-  }
+
   .biopic {
     width: 150px;
   }
