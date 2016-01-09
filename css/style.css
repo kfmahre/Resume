@@ -11,8 +11,8 @@ html,body {
   box-sizing: border-box;
 }
 
-body {
-  margin: none;
+@-ms-viewport {
+  width: device-width;
 }
 
 .clear-fix {
@@ -251,6 +251,15 @@ span {
 }
 
 @media only screen and (max-width: 485px){
+
+  section.module.parallax h1 {
+    font-size: 60px;
+  }
+
+  section.module.parallax-2 h1 {
+    font-size: 60px;
+    line-height: 300px;
+  }
 
   section.module.parallax-5 h1 {
     font-size: 60px;
