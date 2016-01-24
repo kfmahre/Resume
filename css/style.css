@@ -15,6 +15,69 @@ html,body {
   width: device-width;
 }
 
+/* start of buttons styles */
+
+.buttons {
+    float: left;
+    margin-left: calc((100% - 180px) / 2);
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  margin: 5px 5px 5px 5px;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  text-indent: -9999px;
+  z-index: -3;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
+.home {
+  background: url("home2.png");
+  background-image: url("home2.png");
+  background-color: transparent;
+  background-size: 100%;
+  background-position: 0 0;
+}
+
+.github {
+  background: url("github2.png");
+  background-image: url("github2.png");
+  background-color: transparent;
+  background-size: 100%;
+  background-position: 0 0;
+  z-index: inherit;
+}
+
+.linkedin {
+  background: url("linkedin2.png");
+  background-image: url("linkedin2.png");
+  background-color: transparent;
+  background-size: 100%;
+  background-position: 0 0;
+  z-index: inherit;
+}
+
+.icon:hover {
+  background-position: 0 -50px;
+  background-color: #666666;
+  box-shadow: 0px 0px 3px 2px #333333;
+}
+
+/* end of buttons styles */
+
+#main {
+  width: 100%;
+}
+
+#white-text {
+  font-weight: 400;
+}
+
 .clear-fix {
   overflow: auto;
 }
