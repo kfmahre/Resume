@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-
+<!doctype html>
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script src="js/jQuery.js"></script>
-    <script src="js/helper.js"></script>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200' rel='stylesheet' type='text/css'>
     <title>Kyle's Resume</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200' rel='stylesheet'>
+
   </head>
 
 <body>
@@ -27,11 +28,11 @@
 
     <section class="module parallax parallax-1">
       <div class="container">
-       <h1>Resume</h1>
+       <h2>Resume</h2>
       </div>
     </section>
 
-    <section class="module content">
+    <section class="module content"><h2></h2>
       <div id="header" class="container center-content clear-fix">
         <ul id="topContacts" class="flex-box"></ul>
       </div>
@@ -41,44 +42,44 @@
 
     <section class="module parallax parallax-2">
       <div class="container">
-       <h1 class="flex-box">Work Experience</h1>
+       <h2>Projects</h2>
       </div>
     </section>
 
-    <section class="module content">
-      <div id="workExperience" class="container gray">
+    <section class="module content"><h2></h2>
+      <div id="projects" class="container single-item">
       </div>
     </section>
 
     <section class="module parallax parallax-3">
       <div class="container">
-       <h1>Projects</h1>
+       <h2>Education</h2>
       </div>
     </section>
 
-    <section class="module content">
-      <div id="projects" class="container">
+    <section class="module content"><h2></h2>
+      <div id="education" class="container gray">
       </div>
     </section>
 
     <section class="module parallax parallax-4">
       <div class="container">
-       <h1>Education</h1>
+       <h2 class="flex-box">Work Experience</h2>
       </div>
     </section>
 
-    <section class="module content">
-      <div id="education" class="container gray">
+    <section class="module content"><h2></h2>
+      <div id="workExperience" class="container gray">
       </div>
     </section>
 
     <section class="module parallax parallax-5">
       <div class="container">
-       <h1 class="flex-box">Where I've Lived and Worked</h1>
+       <h2 class="flex-box">Where I've Lived and Worked</h2>
       </div>
     </section>
 
-    <section class="module content">
+    <section class="module content"><h2></h2>
       <div id="mapDiv" class="container">
       </div>
     </section>
@@ -93,36 +94,11 @@
 
   </div>
 
-  <!--
-  The next line tells the browser where to download the JavaScript file you'll be
-  writing. In resumeBuilder.js, you'll be writing code that builds the resume
-  dynamically when this website, index.html, is opened.
-  -->
+  <script src="js/jQuery.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="js/helper.js"></script>
   <script src="js/resumeBuilder.js"></script>
-
-
-  <!--
-  These scripts are written in JavaScript. You'll be breaking them down as part of
-  a quiz. Essentially, the next few lines are checking to see if you have not
-  changed each section of the resume. If you have not made any changes to a section
-  of the resume, then that part of the resume does not show up. More on this in the
-  course.
-  -->
-
   <script type="text/javascript">
-    // Notice how all of a sudden there's JavaScript inside this HTML
-    // document? You can write JavaScript between <script> tags. At the end of your
-    // JavaScript, don't forget the closing script tag with the slash (/).
-
-
-    // Also, this is a JavaScript style comment. You can comment in JavaScript with:
-
-    //   two slashes for all following characters on a single line, or
-
-    /*
-        an opening and closing set of slash asterisks for block comments.
-    */
-
 
     if(document.getElementsByClassName('flex-item').length === 0) {
       document.getElementById('topContacts').style.backgroundColor = '#000000';
@@ -145,6 +121,13 @@
     if(document.getElementById('map') === 0) {
       document.getElementById('mapDiv').style.backgroundColor = '#000000';
     }
+
+    $(document).ready(function(){
+      $('.single-item').slick({
+        dots:true
+      });
+    });
+
   </script>
 
 </body>

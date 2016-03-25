@@ -105,14 +105,14 @@ var projects = {
 			"title" : "Portfolio",
 			"dates" : "2015",
 			"description" : "This is a resposively designed portfolio of all the projects I've currently comepleted.",
-			"images": ["images/foliopic1.png", "images/foliopic2.png"],
+			"images": ["images/foliopic1.png"],
 			"url" : "http://kfmahre.github.io/Portfolio/"
 		},
 		{
 			"title" : "Classic Arcade Game Clone",
 			"dates" : "September-October 2015 & continued",
 			"description" : "Developing this classic arcade game clone enhanced my skills in object-oriented JavaScript and expanded my understanding of HTML canvas.",
-			"images" : ["images/aGame1.png","images/aGame2.png"],
+			"images" : ["images/aGame1.png"],
 			"url" : "https://github.com/kfmahre/arcade-game"
 		}
 	]

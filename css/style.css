@@ -6,6 +6,7 @@
 
 html,body {
   font-family: 'Source Sans Pro', sans-serif;
+  background-color: #a6a6a6;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -64,8 +65,6 @@ html,body {
 
 .icon:hover {
   background-position: 0 -50px;
-  background-color: #666666;
-  box-shadow: 0px 0px 3px 2px #333333;
 }
 
 /* end of buttons styles */
@@ -183,7 +182,7 @@ section.module.parallax {
   background-size: cover;
 }
 
-section.module.parallax h1 {
+section.module.parallax h2 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 48px;
   line-height: 600px;
