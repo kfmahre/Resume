@@ -52,7 +52,7 @@ var work = {
 			"title" : "BARISTA",
 			"location": "Kennesaw, GA",
 			"dates" : "2011- PRESENT",
-			"description": "Works as part of a team to keep the busiest store in the district running smoothly. Improvises and communicates with my coworkers in a dynamic environment. Requires focus, flexibility, manners, and cool-headedness."
+			"description": "Teamwork and leadership in customer service <br>Sales experience in a fast-paced retail environment"
 		},
 		{
 			"employer" : "KING & YAKLIN, LLP.",
@@ -60,7 +60,7 @@ var work = {
 			"title" : "FILE CLERK",
 			"location": "Marietta, GA",
 			"dates": "JAN 2013-APR 2013",
-			"description": "Filed documents in court and judge’s chambers. Reorganized current and closed files, moved many to electronic storage for safe-keeping."
+			"description": "Filed documents at court and judge’s chambers<br>Organized correspondence documents and closed files <br>Electronic document storage"
 		},
 		{
 			"employer": "US NAVY",
@@ -68,7 +68,7 @@ var work = {
 			"title": "ENLSITED SAILOR",
 			"location": "Norfolk, VA",
 			"dates": "2004-2007",
-			"description": "Served as a maintenance technician aboard the guided missile destroyer, USS Barry. Primary focus on maintaining gas-turbine generators and switchboards. Also trained on computer networking, telecommunications, fire-fighting, and damage-control."
+			"description": "Served as a maintenance technician aboard the guided missile destroyer USS Barry <br>Primary focus on maintaining gas-turbine generators and switchboards <br>Also trained on computer networking, telecommunications, fire-fighting, and damage-control"
 		}
 	]
 };

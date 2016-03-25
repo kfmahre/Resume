@@ -6,10 +6,13 @@
 
 html,body {
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #a6a6a6;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+header {
+  background-color: #a6a6a6;
 }
 
 @-ms-viewport {
@@ -152,7 +155,7 @@ section.module:last-child {
   margin-bottom: 0;
 }
 
-section.module h1 {
+section.module h2 {
   margin-bottom: 40px;
   font-size: 30px;
 }
@@ -264,16 +267,16 @@ span {
     width: 175px;
   }
 
-  section.module.parallax h1 {
+  section.module.parallax h2 {
     font-size: 80px;
   }
 
-  section.module.parallax-2 h1 {
+  section.module.parallax-4 h2 {
   font-size: 80px;
   line-height: 600px;
   }
 
-  section.module.parallax-5 h1 {
+  section.module.parallax-5 h2 {
   font-size: 80px;
   line-height: 300px;
   }
@@ -288,20 +291,20 @@ span {
   section.module p {
     font-size: 20px;
   }
-  section.module.parallax h1 {
+  section.module.parallax h2 {
     font-size: 96px;
   }
 
-  section.module.parallax-2 h1 {
+  section.module.parallax-4 h2 {
     font-size: 80px;
     line-height: 300px;
   }
 
-  section.module.parallax-5 h1 {
+  section.module.parallax-5 h2 {
     font-size: 60px;
     line-height: 300px;
   }
-
+/*
   .container {
   max-width: 100%;
   margin: 0 auto;
@@ -317,7 +320,7 @@ span {
   #projects div{
     max-width: 100%;
   }
-
+*/
 .biopic {
   width: 150px;
   }
@@ -346,21 +349,21 @@ span {
   #education div{
     max-width: 100%;
   }
-
+/*
   #projects div{
     max-width: 100%;
   }
-
-  section.module.parallax h1 {
+*/
+  section.module.parallax h2 {
     font-size: 60px;
   }
 
-  section.module.parallax-2 h1 {
+  section.module.parallax-4 h2 {
     font-size: 60px;
     line-height: 300px;
   }
 
-  section.module.parallax-5 h1 {
+  section.module.parallax-5 h2 {
     font-size: 60px;
     line-height: 200px;
   }
