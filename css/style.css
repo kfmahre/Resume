@@ -6,13 +6,44 @@
 
 html,body {
   font-family: 'Source Sans Pro', sans-serif;
+  background-color: #a6a6a6;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 header {
-  background-color: #a6a6a6;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+a {
+  font-size: 18px;
+  text-shadow: 1px 1px gray;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+span {
+  padding: 5px;
+  font-weight: 200;
 }
 
 @-ms-viewport {
@@ -89,6 +120,10 @@ header {
 .project-entry {
 }
 
+.project-entry {
+
+}
+
 .date-text {
   font-style: italic;
   float: left;
@@ -97,28 +132,6 @@ header {
 .location-text {
   font-style: italic;
   float: right;
-
-}
-
-img {
-  max-width: 100%;
-}
-
-p {
-  font-size: 18px;
-  line-height: 24px;
-}
-
-a {
-  font-size: 18px;
-  text-shadow: 1px 1px gray;
-  text-decoration: none;
-  margin-top: 10px;
-  display: block;
-}
-
-a:hover {
-  text-decoration: none;
 }
 
 .welcome-message {
@@ -129,25 +142,6 @@ a:hover {
 #skills-h3 {
   font-weight: bold;
   display: none;
-}
-
-.white-text {
-}
-
-.orange-text {
-}
-
-.gray {
-  clear:both;
-}
-
-em {
-  color: #ffffff;
-}
-
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 /* parallax effect */
@@ -221,11 +215,7 @@ section.module.parallax-5 {
 }
 
 .center-content {
-  padding: 2.5% 5%;
-}
-
-ul {
-  list-style-type: none;
+  margin: 2.5% 5%;
 }
 
 .biopic {
@@ -238,11 +228,6 @@ ul {
 
 }
 
-span {
-  padding: 5px;
-  font-weight: 200;
-}
-
 #lets-connect {
   text-align: center;
 }
@@ -250,13 +235,25 @@ span {
 #map {
   display: block;
   height: 100%;
-  margin: 0 5%;
+  margin: 0 10%;
   }
 
 #mapDiv {
   height: 600px;
   width: 100%;
   padding-bottom: 5%;
+}
+
+#workExperience {
+  width: 100%;
+}
+
+#education {
+  width: 100%;
+}
+
+#projects {
+  width: 100%;
 }
 
 /* Media queries to handle various device widths */
@@ -272,13 +269,13 @@ span {
   }
 
   section.module.parallax-4 h2 {
-  font-size: 80px;
-  line-height: 600px;
+    font-size: 80px;
+    line-height: 600px;
   }
 
   section.module.parallax-5 h2 {
-  font-size: 80px;
-  line-height: 300px;
+    font-size: 80px;
+    line-height: 600px;
   }
 
 }
@@ -304,23 +301,7 @@ span {
     font-size: 60px;
     line-height: 300px;
   }
-/*
-  .container {
-  max-width: 100%;
-  margin: 0 auto;
-}
-  #workExperience div{
-    max-width: 100%;
-  }
 
-  #education div{
-    max-width: 100%;
-  }
-
-  #projects div{
-    max-width: 100%;
-  }
-*/
 .biopic {
   width: 150px;
   }
@@ -337,23 +318,6 @@ span {
 
 @media only screen and (max-width: 485px){
 
-  .container {
-  width: 100%;
-  margin: 0 auto;
-  }
-
-  #workExperience div{
-    max-width: 100%;
-  }
-
-  #education div{
-    max-width: 100%;
-  }
-/*
-  #projects div{
-    max-width: 100%;
-  }
-*/
   section.module.parallax h2 {
     font-size: 60px;
   }
