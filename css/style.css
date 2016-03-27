@@ -8,7 +8,6 @@ html,body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #555555;
   background: url(dark_wall.png), repeat;
-  opacity: .9;
   color: #eb943d;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
