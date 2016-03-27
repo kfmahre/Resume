@@ -6,14 +6,13 @@
 
 html,body {
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #a6a6a6;
+  background-color: #555555;
+  background: url(dark_wall.png), repeat;
+  opacity: .9;
+  color: #eb943d;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-header {
-
 }
 
 ul {
@@ -30,15 +29,22 @@ p {
 }
 
 a {
+  color: #3c85ea;
   font-size: 18px;
-  text-shadow: 1px 1px gray;
   text-decoration: none;
   margin-top: 10px;
   display: block;
 }
 
 a:hover {
+  color: #3cdcea;
+  text-shadow: 1px 1px #ea3c85;
   text-decoration: none;
+}
+
+a:active {
+  color: #4a3cea;
+  text-shadow: 1px 1px #85ea3c;
 }
 
 span {
@@ -107,21 +113,22 @@ span {
   width: 100%;
 }
 
-#white-text {
+.nameTop {
+  color: #000000;
+}
+
+.white-text {
+  color: #ffffff;
   font-weight: 400;
+}
+
+.orange-text {
+  color: #3deb3d;
+  text-shadow: 1px 1px #ea3c85;
 }
 
 .clear-fix {
   overflow: auto;
-}
-
-.education-entry,
-.work-entry,
-.project-entry {
-}
-
-.project-entry {
-
 }
 
 .date-text {
@@ -166,6 +173,7 @@ section.module p:last-child {
 
 section.module.content {
   padding: 40px 0;
+  background: url(dark_wood.png), repeat;
 }
 
 section.module.parallax {
@@ -221,11 +229,15 @@ section.module.parallax-5 {
 .biopic {
   float: left;
   width: 200px;
+  opacity: .8;
   border: 3px solid #8c8c8c;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+}
 
+.biopic:hover {
+  opacity: 1;
 }
 
 #lets-connect {

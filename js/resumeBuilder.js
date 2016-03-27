@@ -3,7 +3,7 @@ var bio = {
 	"bioPic" : ["images/old500X.jpg"],
 	"name" : "Kyle Mahre",
 	"role" : "Web developer",
-	"welcomeMessage" : "Welcome to my resume webpage",
+	"welcomeMessage" : "Welcome! Stuff I know about:",
 	"contacts" : {
 		"email": "kfmahre@gmail.com",
 		"mobile": "404.610.6162",
