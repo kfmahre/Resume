@@ -14,6 +14,10 @@ html,body {
   box-sizing: border-box;
 }
 
+header {
+  background: url(dark_wood.png), repeat;
+}
+
 ul {
   list-style-type: none;
 }
@@ -114,6 +118,11 @@ span {
 
 .nameTop {
   color: #000000;
+}
+
+.project-entry {
+  padding: 1%;
+  background: url(dark_wall.png), repeat;
 }
 
 .white-text {
@@ -269,6 +278,23 @@ section.module.parallax-5 {
 
 #projects {
   width: 100%;
+}
+
+.single-item {
+  max-width: 80%;
+  margin: 0 10%;
+}
+
+.slick-dots li button:before
+{
+    opacity: .25;
+    color: white;
+}
+
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: white;
 }
 
 /* Media queries to handle various device widths */

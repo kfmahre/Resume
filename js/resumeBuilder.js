@@ -231,3 +231,12 @@ function inName(name) {
 $("#main").append(internationalizeButton);
 
 $("#mapDiv").append(googleMap);
+
+    $(document).ready(function(){
+      $('.single-item').slick({
+              dots:true,
+              autoplay:true,
+              slidesToShow: 1,
+              slidesToScroll: 1
+      });
+    });
