@@ -10,7 +10,6 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link href="css/style.css" rel="stylesheet">
-    <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200' rel='stylesheet'>
   </head>
 
@@ -86,30 +85,30 @@
 
   <script src="js/jQuery.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
-  <script src="js/helper.js"></script>
-  <script src="js/resumeBuilder.js"></script>
+  <script src="js/app.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC3YwElxKD41XTrpD9OSgwfypsNLl2jZ2I&libraries=places" async defer></script>
   <script type="text/javascript">
 
     if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('topContacts').style.backgroundColor = '#000000';
+      document.getElementById('topContacts').style.opacity = '0';
     }
     if(document.getElementsByTagName('h1').length === 0) {
-      document.getElementById('header').style.backgroundColor = '#000000';
+      document.getElementById('header').style.opacity = '0';
     }
     if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.backgroundColor = '#000000';
+      document.getElementById('experienceDiv').style.display = 'none';
     }
     if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.backgroundColor = '#000000';
+      document.getElementById('projectsDiv').style.display = 'none';
     }
     if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.backgroundColor = '#000000';
+      document.getElementById('educationDiv').style.display = 'none';
     }
     if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('lets-connect').style.backgroundColor = '#000000';
+      document.getElementById('lets-connect').style.opacity = '0';
     }
     if(document.getElementById('map') === 0) {
-      document.getElementById('mapDiv').style.backgroundColor = '#000000';
+      document.getElementById('mapDiv').style.display = 'none';
     }
 
   </script>
