@@ -6,8 +6,7 @@
 
 html,body {
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #555555;
-  background: url(dark_wall.png), repeat;
+  background-color: #888888;
   color: #eb943d;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -15,7 +14,7 @@ html,body {
 }
 
 header {
-  background: url(dark_wood.png), repeat;
+  background-color: #888888;
 }
 
 ul {
@@ -121,8 +120,7 @@ span {
 }
 
 .project-entry {
-  padding: 1%;
-  background: url(dark_wall.png), repeat;
+  padding: 2.5px;
 }
 
 .white-text {
@@ -185,7 +183,7 @@ section.module p:last-child {
 
 section.module.content {
   padding: 40px 0;
-  background: url(dark_wood.png), repeat;
+  background-color: #333333;
 }
 
 section.module.parallax {
@@ -281,14 +279,14 @@ section.module.parallax-5 {
 }
 
 .single-item {
+  text-align: center;
   max-width: 80%;
-  margin: 0 10%;
+  margin: 10%;
 }
 
-.slick-dots li button:before
-{
-    opacity: .25;
-    color: white;
+.slick-dots li button:before {
+  opacity: .25;
+  color: white;
 }
 
 .slick-dots li.slick-active button:before

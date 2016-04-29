@@ -294,10 +294,31 @@ var projects = {
     },
     {
       "title" : "Classic Arcade Game Clone",
-      "dates" : "September-October 2015 & continued",
+      "dates" : "September-October 2015",
       "description" : "Developing this classic arcade game clone enhanced my skills in object-oriented JavaScript and expanded my understanding of HTML canvas.",
       "images" : ["images/aGame1.png"],
       "url" : "https://github.com/kfmahre/arcade-game"
+    },
+    {
+      "title" : "Website Performance Optimization",
+      "dates" : "November-December 2015",
+      "description" : "Udacity made a really badly performing website and tasked students with getting it to standard.",
+      "images" : ["images/project4.png"],
+      "url" : "https://github.com/kfmahre/udportfolio"
+    },
+    {
+      "title" : "Cat-Clicker Web App",
+      "dates" : "January & Febuary 2016",
+      "description" : "Fun project that really helped me get the MVO/MVVM concept",
+      "images" : ["images/catClicker.png"],
+      "url" : "http://kfmahre.github.io/Cat-Clicker/"
+    },
+    {
+      "title" : "Neighborhood Map Project",
+      "dates" : "Febuary & March 2016",
+      "description" : "Using knockout.js and google maps, I made this project that shows the information on several trailheads in my region. Wunderground API weather data displays in infowindows on the google map. A search field filters the map markers and list of trails.",
+      "images" : ["images/project5.png"],
+      "url" : "http://kfmahre.github.io/Neighborhood-Map/"
     }
   ]
 };
