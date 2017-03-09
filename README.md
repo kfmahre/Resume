@@ -4,5 +4,7 @@
 
 ## I've changed quite a bit since completing the project and updates will roll out over time.
 
+Something changed and broke the map. Fixing that first
+
 ### Up @: http://kfmahre.github.io/Resume/
 
