@@ -310,7 +310,7 @@ var projects = {
       "title" : "Cat-Clicker Web App",
       "dates" : "January & Febuary 2016",
       "description" : "Fun project that really helped me get the MVO/MVVM concept",
-      "images" : ["images/catClicker.png"],
+      "images" : ["images/catclicker.png"],
       "url" : "http://kfmahre.github.io/Cat-Clicker/"
     },
     {
