@@ -233,17 +233,25 @@ bio.display();
 var work = {
   "jobs" : [
     {
-      "employer" : "STARBUCKS",
+      "employer" : "Big Peach Running Company",
+      "url" : "https://www.bigpeachrunningco.com/locations/marietta/",
+      "title" : "Guest Advocate",
+      "location": "Marietta, GA",
+      "dates" : "June 2017- Present",
+      "description": "Advocates for customers to advance their active pedestrian experience"
+    },
+    {
+      "employer" : "Starbucks",
       "url" : "http://www.starbucks.com/store/17309/us/chastain-busbee/745-chastain-rd-kennesaw-ga-301443000",
-      "title" : "BARISTA",
+      "title" : "Barista",
       "location": "Kennesaw, GA",
-      "dates" : "2011- PRESENT",
+      "dates" : "2011- 2016",
       "description": "Teamwork and leadership in customer service <br>Sales experience in a fast-paced retail environment"
     },
     {
       "employer" : "KING & YAKLIN, LLP.",
       "url" : "http://www.kingyaklin.com/",
-      "title" : "FILE CLERK",
+      "title" : "File clerk",
       "location": "Marietta, GA",
       "dates": "JAN 2013-APR 2013",
       "description": "Filed documents at court and judge’s chambers<br>Organized correspondence documents and closed files <br>Electronic document storage"
@@ -251,7 +259,7 @@ var work = {
     {
       "employer": "US NAVY",
       "url" : "https://en.wikipedia.org/wiki/USS_Barry_(DDG-52)",
-      "title": "ENLSITED SAILOR",
+      "title": "Sailor",
       "location": "Norfolk, VA",
       "dates": "2004-2007",
       "description": "Served as a maintenance technician aboard the guided missile destroyer USS Barry <br>Primary focus on maintaining gas-turbine generators and switchboards <br>Also trained on computer networking, telecommunications, fire-fighting, and damage-control"
