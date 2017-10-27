@@ -190,13 +190,13 @@ var bio = {
   "bioPic" : ["images/old500X.jpg"],
   "name" : "Kyle Mahre",
   "role" : "Web developer",
-  "welcomeMessage" : "Welcome! Some stuff I know about:",
+  "welcomeMessage" : "Some stuff I know about:",
   "contacts" : {
     "email": "kfmahre@gmail.com",
     "mobile": "404.610.6162",
     "github": "https://github.com/kfmahre"
   },
-  "skills" : ["HTML5", "CSS3", "JavaScript", "jQuery", "knockout.js", "Git", "Github", "Gulp"]
+  "skills" : ["HTML5", "CSS3", "JavaScript", "SQL", "Python", "jQuery", "Responsive Design", "Angular.js", "Git", "Github", "Gulp"]
   // TODO: Add more skills as learned
 };
 
