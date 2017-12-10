@@ -457,11 +457,8 @@ $("#main").append(internationalizeButton);
 
 /* Slick code for the projects display */
 $(document).ready(function(){
-  $('.single-item').slick({
-    dots:true,
-    autoplay:true,
-    slidesToShow: 1,
-    slidesToScroll: 1
+  $('.single-item-rtl').slick({
+    rtl: true
   });
 });
 /* ----------------------------------- */
