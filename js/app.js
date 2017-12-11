@@ -62,6 +62,10 @@ var googleMap = '<div id="map"></div>';
 
 var map;    // declares a global map variable
 
+fixCarousel = function() {
+  $('.carousel-item:first').addClass('active');
+};
+
 /*
 Start here! initializeMap() is called when page is loaded.
 */
@@ -184,7 +188,7 @@ function initializeMap() {
   // the locations array
   pinPoster(locations);
 
-}
+ };
 
 var bio = {
   "bioPic" : ["images/old500X.jpg"],
@@ -356,12 +360,6 @@ projects.display = function() {
 
 projects.display();
 
-fixCarousel = function() {
-  $('.carousel-item:first').addClass('active');
-};
-
-fixCarousel();
-
 var education = {
   "schools" : [
     {
@@ -463,6 +461,7 @@ $("#main").append(internationalizeButton);
 
 /* bootstrap carousel */
 $(document).ready(function(){
+  fixCarousel();
   $('.carousel').carousel({
   interval: 2000
   })
