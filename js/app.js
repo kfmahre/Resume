@@ -455,11 +455,11 @@ $("#main").append(internationalizeButton);
 
 
 
-/* Slick code for the projects display */
+/* bootstrap carousel */
 $(document).ready(function(){
-  $('.single-item-rtl').slick({
-    rtl: true
-  });
+  $('.carousel').carousel({
+  interval: 2000
+  })
 });
 /* ----------------------------------- */
 
