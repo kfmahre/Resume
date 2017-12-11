@@ -38,11 +38,11 @@ var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p class="white-text"><br>%data%</p>';
 
-var HTMLprojectStart = '<div class="project-entry carousel-item center-content"></div>';
+var HTMLprojectStart = '<div class="project-entry carousel-item"></div>';
 var HTMLprojectTitle = '<a href="#">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p class="white-text"><br>%data%</p>';
-var HTMLprojectImage = '<img src="%data%">';
+var HTMLprojectImage = '<img class="d-block w-100" src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry center-content"></div>';
 var HTMLschoolName = '<a href="#">%data%';
