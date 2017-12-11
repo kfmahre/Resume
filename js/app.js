@@ -62,11 +62,6 @@ var googleMap = '<div id="map"></div>';
 
 var map;    // declares a global map variable
 
-
-function fixCarousel() {
-  $('.carousel-item:first').addClass('active');
-};
-
 /*
 Start here! initializeMap() is called when page is loaded.
 */
@@ -462,7 +457,7 @@ $("#main").append(internationalizeButton);
 
 /* bootstrap carousel */
 $(document).ready(function(){
-  fixCarousel();
+  $('.carousel-item:first').addClass('active');
   $('.carousel').carousel({
   interval: 2000
   })
