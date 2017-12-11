@@ -62,7 +62,8 @@ var googleMap = '<div id="map"></div>';
 
 var map;    // declares a global map variable
 
-fixCarousel = function() {
+
+function fixCarousel() {
   $('.carousel-item:first').addClass('active');
 };
 
