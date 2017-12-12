@@ -39,8 +39,8 @@ var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p class="white-text"><br>%data%</p>';
 
 var HTMLprojectStart = '<div class="project-entry carousel-item"></div>';
-var HTMLprojectTitle = '<a href="#" class="carousel-caption d-none d-md-block>%data%</a>';
-var HTMLprojectDates = '<h3 class="date-text">%data%</h3>';
+var HTMLprojectTitle = '<a href="#" class="carousel-caption d-none d-md-block><h3>%data%</h3></a>';
+var HTMLprojectDates = '<p class="date-text">%data%</p>';
 var HTMLprojectDescription = '<p class="white-text"><br>%data%</p>';
 var HTMLprojectImage = '<img class="img-fluid slideImg" src="%data%">';
 
