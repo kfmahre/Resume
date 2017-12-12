@@ -335,13 +335,6 @@ projects.display = function() {
   for (var project in projects.projects) {
     $("#projects").append(HTMLprojectStart);
 
-    if (projects.projects[project].images.length > 0) {
-      for (var image in projects.projects[project].images) {
-        var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
-        $(".project-entry:last").append(formattedImage);
-      }
-    }
-
     var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title).replace("#",projects.projects[project].url);
     $(".project-entry:last").append(formattedTitle);
 
@@ -350,6 +343,13 @@ projects.display = function() {
 
     var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
     $(".project-entry:last").append(formattedDescription);
+
+    if (projects.projects[project].images.length > 0) {
+      for (var image in projects.projects[project].images) {
+        var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
+        $(".project-entry:last").append(formattedImage);
+      }
+    }
 
   }
 };
