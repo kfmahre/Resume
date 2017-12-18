@@ -193,8 +193,6 @@ section.module.parallax {
 
 section.module.parallax h2 {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 48px;
-  line-height: 600px;
   font-weight: 700;
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
