@@ -283,18 +283,8 @@ section.module.parallax-5 {
 
   section.module.parallax h2 {
     font-size: 80px;
-    display: table-cell;
-    vertical-align: middle;
-  }
-
-  section.module.parallax-4 h2 {
-    font-size: 80px;
     line-height: 600px;
-  }
-
-  section.module.parallax-5 h2 {
-    font-size: 80px;
-    line-height: 600px;
+    text-align: center;
   }
 
 }
