@@ -181,6 +181,7 @@ section.module.content {
 
 section.module.parallax {
   height: 600px;
+  text-align: center;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -195,7 +196,6 @@ section.module.parallax h2 {
   font-size: 48px;
   line-height: 600px;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
