@@ -154,6 +154,10 @@ span {
   display: none;
 }
 
+.row-fluid {
+  text-align: center;
+}
+
 /* parallax effect */
 section.module:last-child {
   margin-bottom: 0;
